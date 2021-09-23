@@ -9,24 +9,21 @@ main is same as 01-starter, project scaffold
 02 - Coins
 -- a Coin class to display some coins
 
-03 - Mario class, moving
+03 - Mario class
+-- moving, jumping
 
-05 - Mario3
---jumping mario
+04 - Game
+-- refactor to have a Game class
+-- start screen, game over screen, scoreboard, sounds
 
-06 - Game
---refactor to have a Game class
+05 - enemies
+-- collisions
+-- collect coins
+-- enemies
+-- timer/countdown
 
-07 Loading Screen
--- to tell people how to move
-
-08 - Scoreboard
-
-09 - CoinCollision
-
-10 - Landscape
--- a game board/level with pretty clouds and stuff
-
-11 - Enemies
-
-12 - Enemy collision aka death
+-- things you can do --
+turn it into a scrolling landscape! in other words, make it longer the current window, and have the landscape move while mario stays in place!
+add levels
+more enemies or rewards
+more landscape features
