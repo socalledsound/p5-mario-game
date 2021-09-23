@@ -9,11 +9,7 @@ main is same as 01-starter, project scaffold
 02 - Coins
 -- a Coin class to display some coins
 
-03 - Mario1
--- a Mario class to display Mario
-
-04 - Mario2
--- moving mario
+03 - Mario class, moving
 
 05 - Mario3
 --jumping mario

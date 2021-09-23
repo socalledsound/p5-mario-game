@@ -13,7 +13,7 @@ const loadCoinImages = (objectsImg) => {
 
 
 const loadMarioImages = (marioImg) => {
-
+    
     const runImages = Array.from({length: 14}, (el, i) => {
         return marioImg.get(i * 30 + 20, 50, 30, 35)
     })
