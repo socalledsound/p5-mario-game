@@ -1,15 +1,18 @@
 class Coin {
-    constructor({x, y}, size){
+    constructor(images, {x, y}, size){
         this.x = x
         this.y = y
         this.size = size
-        this.images = []
+        this.images = images
         this.imageCounter = 0
         this.speed = Math.random() * 0.5
+        this.collected = false
     }
 
     render(){
-        image(this.images[Math.floor(this.imageCounter)], this.x, this.y, this.size, this.size)
+        if(!this.collected){
+            image(this.images[Math.floor(this.imageCounter)], this.x, this.y, this.size, this.size)
+        } 
     }
 
     update(){

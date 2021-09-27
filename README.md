@@ -27,3 +27,23 @@ turn it into a scrolling landscape! in other words, make it longer the current w
 add levels
 more enemies or rewards
 more landscape features
+
+videos to do:
+
+DAY 11
+
+1. write Game class and move stuff over from sketch
+   GameSettings
+2. the various screens
+   Scoreboard
+   Background
+   Overlay
+3. add sounds
+
+DAY 12
+
+1. bounding box
+2. goomba
+3. coin collisions
+4. goomba collisions
+5. game over

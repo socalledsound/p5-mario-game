@@ -1,0 +1,20 @@
+
+const gameSettings = { 
+    canvasWidth : 1000, 
+    canvasHeight : 600, 
+    numCoins : 100,
+    skyColor : [95, 138, 245], 
+    groundColor :  [110, 59, 21], 
+    overlayColor: [200, 200, 200, 225],
+    groundLevel : 400,      
+    coinSize : 60, 
+    coinLevel : 100,           
+    heroStartX : 200,
+    heroStartY : 280,
+    overlayX: 250,
+    overlayY: 50,
+    overlayWidth: 500,
+    overlayHeight: 300,
+    heroSize : 120, 
+    textSize: 30,
+}

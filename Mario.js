@@ -1,10 +1,10 @@
 class Mario {
-    constructor({x, y}, size){
+    constructor(images, jumpSound, {x, y}, size){
         this.x = x
         this.y = y
         this.startY = y
         this.size = size
-        this.images = []
+        this.images = images
         this.imageCounter = 5
         this.direction = 1
         this.accelerationX = 10
@@ -16,6 +16,7 @@ class Mario {
         this.jumping = false
         this.jumpValue = 0
         this.jumpInterval = null
+        this.jumpSound = jumpSound
 
     }
 
@@ -36,6 +37,7 @@ class Mario {
 
     jump(){
         console.log('hi there')
+        this.jumpSound.play()
         if(!this.jumping){
             this.jumpInterval = setInterval(this.animateJump, 20)
             setTimeout(this.clearJump, 500)

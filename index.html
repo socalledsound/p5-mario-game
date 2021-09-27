@@ -4,14 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      button{
+        width: 6rem;
+        height: 4rem;
+        border-radius: 1.2rem;
+        background-color: rgb(61, 61, 179);
+        color: white;
+        border: none;
+      }
+      button:hover{
+        background-color: rgb(146, 146, 175);
+        color: rgb(12, 12, 12);
+      }
+    </style>
     <title>mario</title>
-
-    <script src="libs/p5.js"></script>
-  </head>
+      <script src="libs/p5.js"></script>
+      <script src="libs/p5.dom.min.js"></script>
+      <script src="libs/p5.sound.min.js"></script>
+    </head>
   <body>
     <script src="load-image-utils.js"></script>
+    <script src="GameSettings.js"></script>
+    <script src="Background.js"></script>
+    <script src="Scoreboard.js"></script>
+    <script src="Overlay.js"></script>
     <script src="Coin.js"></script>
     <script src="Mario.js"></script>
+    <script src="Game.js"></script>
     <script src="sketch.js"></script>
   </body>
 </html>
