@@ -1,4 +1,4 @@
-let objectImg, marioImg
+let objectImg, marioImg, goombaImg
 let images 
 let themeSong, jumpSound, coinSound
 let sounds 
@@ -8,20 +8,22 @@ let game
 function preload(){
     objectsImg = loadImage('assets/items-objects.png')
     marioImg = loadImage('assets/mario-use.png')
+    goombaImg = loadImage('assets/goombas.png')
     themeSong = loadSound('assets/sounds/Mario-theme-song.mp3'), 
     coinSound = loadSound('assets/sounds/Mario-coin-sound.mp3'),
     jumpSound = loadSound('assets/sounds/Mario-jump-sound.mp3'),
-
+    dieSound = loadSound('assets/sounds/mario-dies.mp3')
 
     images = {
         objectsImg,
-        marioImg
+        marioImg, 
+        goombaImg
     }
 
     sounds = {
         themeSong, 
         jumpSound, 
-        coinSound
+        coinSound,
     }
 }
 
@@ -54,7 +56,7 @@ function checkKeys(){
 
 function keyReleased(){
     if(keyCode === UP_ARROW){
-        heroMario.clearJump()
+        game.hero.clearJump()
     }
 }
 

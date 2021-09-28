@@ -1,5 +1,5 @@
 class Coin {
-    constructor(images, {x, y}, size){
+    constructor(images, sound, {x, y}, size){
         this.x = x
         this.y = y
         this.size = size
@@ -7,10 +7,20 @@ class Coin {
         this.imageCounter = 0
         this.speed = Math.random() * 0.5
         this.collected = false
+        this.boundingbox = new BoundingBox(this.x, this.y, this.size)
+        this.sound = sound
+    }
+
+
+    playSound(){
+        this.sound.play()
     }
 
     render(){
+        
         if(!this.collected){
+            // this.boundingbox.update(this.x, this.y)
+            // this.boundingbox.render()
             image(this.images[Math.floor(this.imageCounter)], this.x, this.y, this.size, this.size)
         } 
     }

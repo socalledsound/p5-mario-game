@@ -11,7 +11,6 @@ const loadCoinImages = (objectsImg) => {
     return coinImages 
 }
 
-
 const loadMarioImages = (marioImg) => {
     
     const runImages = Array.from({length: 14}, (el, i) => {
@@ -27,6 +26,14 @@ const loadMarioImages = (marioImg) => {
     const arr = runImages.concat(jumpLeftImages).concat(jumpRightImages)
 
     return arr
+}
+
+const loadGoombaImages = ( goombaImg ) => {
+    
+    const goombaImages = Array.from({ length: 3 }, (el, i) => {
+        return goombaImg.get( i * 18, 0, 18, 20)
+    })
+    return goombaImages
 }
 
 

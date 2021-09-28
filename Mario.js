@@ -17,7 +17,8 @@ class Mario {
         this.jumpValue = 0
         this.jumpInterval = null
         this.jumpSound = jumpSound
-
+        this.boundingbox = new BoundingBox(this.x, this.y, this.size)
+        this.score = 0
     }
 
     animateJump = () => {
@@ -37,8 +38,9 @@ class Mario {
 
     jump(){
         console.log('hi there')
-        this.jumpSound.play()
+        
         if(!this.jumping){
+            this.jumpSound.play()
             this.jumpInterval = setInterval(this.animateJump, 20)
             setTimeout(this.clearJump, 500)
             this.jumping = true
@@ -63,6 +65,8 @@ class Mario {
     }
 
     render(){
+        // this.boundingbox.update(this.x, this.y)
+        // this.boundingbox.render()
         image(this.images[this.imageCounter], this.x, this.y, this.size, this.size)
     }
 

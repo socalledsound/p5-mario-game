@@ -11,5 +11,8 @@ class Scoreboard{
         text(this.score, gameSettings.textSize  * 4.5, gameSettings.textSize  + 10)
     }
 
+    update(newScore){
+        this.score = newScore
+    }
 
 }
